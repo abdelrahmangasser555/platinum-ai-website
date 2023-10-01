@@ -1,0 +1,57 @@
+.body-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* Align content at the top */
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.about-us-section {
+  /* No need for align-self, just use margin-top to push it to the top */
+  margin-top: 20px;
+  /* This pushes the content to the top */
+  text-align: center;
+  /* Center the text horizontally */
+  margin-left: 40px;
+}
+.about-us-header{
+  background: linear-gradient(90deg, #009688, #9B59B6);
+  -webkit-background-clip: text;
+  /* For better browser compatibility */
+  color: transparent;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  /* Additional styling as needed */
+  margin-bottom: 20px;
+  font-family: "space grotesk" , 'Times New Roman', Times, serif ;
+  text-transform: uppercase;
+  letter-spacing: 0.005em;
+}
+.about-us-text{
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #4d5761;
+  font-family: "space grotesk" , 'Times New Roman', Times, serif ;
+  text-transform: uppercase;
+  width : 40%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  
+}
+.services-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 150px;
+  height: 10vh;
+  width: 100vw;
+  background: linear-gradient(90deg,
+    #000000,
+    #1abc9c);;
+}

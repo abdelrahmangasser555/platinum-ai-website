@@ -1,0 +1,45 @@
+.text-container {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+span{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "space grotesk" , 'Times New Roman', Times, serif ;
+  text-transform: uppercase;
+  line-height: 2;
+}
+.text-container.visible:nth-child(1){
+  opacity: 1;
+}
+.text-container.visible .word-1{
+  animation: fade-in 3s ease-in-out 100ms forwards;
+  color: black;
+}
+
+.text-container.visible .word-2 {
+
+  animation: fade-in 1s ease-in-out 200ms forwards;
+}
+.text-container.visible .word-3 {
+
+  animation: fade-in 1s ease-in-out 300ms forwards;
+}
+.text-container.visible .word-4 {
+
+  animation: fade-in 1s ease-in-out 400ms forwards;
+}
+.text-container.visible .word-5{
+  
+    transform: translateX(10%);
+    color: orange;
+}
