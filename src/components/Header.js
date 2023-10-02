@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/header.css";
-import pl from "../logo-3.png";
+import pl from "../logo-3.svg";
 export default function Header() {
   return (
     <div className="header-section ">

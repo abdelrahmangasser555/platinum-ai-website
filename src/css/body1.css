@@ -1,0 +1,18 @@
+.body1{
+    margin-top: 0px;
+    height: 100vh;
+    width: 100%;
+}
+.service-text{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #4d5761;
+    font-family: "space grotesk" , 'Times New Roman', Times, serif ;
+    text-transform: uppercase;
+    width : 50%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    text-align: center;
+    z-index: 1;
+}

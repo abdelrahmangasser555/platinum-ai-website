@@ -10,6 +10,22 @@
     opacity: 1;
   }
 }
+@keyframes in-out{
+  0%{
+    opacity: 0;
+    transform: translateX(-10%);
+    font-size: 1.5rem;
+  }
+  50%{
+    opacity: 1;
+    transform: translateX(0%);
+    font-size: 1.8rem;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
 span{
   color: white;
   font-size: 1.5rem;
@@ -18,11 +34,11 @@ span{
   text-transform: uppercase;
   line-height: 2;
 }
-.text-container.visible:nth-child(1){
+.text-container.visible{
   opacity: 1;
 }
-.text-container.visible .word-1{
-  animation: fade-in 3s ease-in-out 100ms forwards;
+.word-1{
+  animation: fade-in 3s ease-in-out 100ms forwards 1;
   color: black;
 }
 
@@ -38,8 +54,8 @@ span{
 
   animation: fade-in 1s ease-in-out 400ms forwards;
 }
-.text-container.visible .word-5{
+.word-5{
   
-    transform: translateX(10%);
+    animation: in-out 2s ease-in-out 2s forwards infinite;
     color: orange;
 }

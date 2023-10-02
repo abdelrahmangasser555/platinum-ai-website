@@ -4,9 +4,9 @@
   justify-content: flex-start;
   /* Align content at the top */
   align-items: center;
-  height: 100vh;
+  height: calc(fit-content + 10vh);
   width: 100vw;
-
+  margin-bottom: 0px;
 }
 
 .about-us-section {
@@ -37,7 +37,7 @@
   color: #4d5761;
   font-family: "space grotesk" , 'Times New Roman', Times, serif ;
   text-transform: uppercase;
-  width : 40%;
+  width : 25%;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.6;
@@ -54,4 +54,104 @@
   background: linear-gradient(90deg,
     #000000,
     #1abc9c);;
+}
+.our-services{
+  width: 90vw;
+  height: calc(fit-content + 10vh);
+  margin-bottom: 10vh;
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 35px;
+  column-gap: 10%;
+}
+.our-service-container{ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+  width: 20vw;
+
+  border: solid 1px #000000;
+  border-radius: 15px;
+  position: relative;
+}
+@media screen and (max-height: 600px){
+  .our-service-container{
+    width: 80vw;
+    height: 30vh;
+  }
+    .our-service-container-header>h1{
+      font-size: 0.6rem;
+      line-height: 1;
+    }
+  .our-services{
+    grid-template-columns: 1fr;
+    row-gap: 10%;
+  }
+}
+
+@media screen and (max-width: 1600px){
+  .our-service-container{
+    width: 25vw;
+    height: 30vh;
+  }
+  .our-service-container-header>h1{
+      font-size: 0.6rem;
+      line-height: 1;
+  .our-service-container-header{
+    background-color: #000000;
+  }
+  }
+}
+.our-service-container-header{
+  position: absolute;
+  top: 0;
+  left: 25%;
+  width: 100%;
+  height: 100%;
+}
+.our-service-container-header > h1{
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #4d5761;
+  font-family: "space grotesk" , 'Times New Roman', Times, serif ;
+  text-transform: uppercase;
+  width : 50%;
+  margin-right: auto;
+  line-height: 1.6;
+  text-align: center;
+  white-space: nowrap;
+  text-align: center;
+}
+.service-description{
+  width: 60%;
+  font-size: 1.2rem;
+    font-weight: 300;
+    color: #4d5761;
+    margin-bottom: 5px;
+    margin-left: -5%;
+    letter-spacing: 0.005em;
+    line-height: 2;
+  }
+.crm{
+  background: linear-gradient(90deg, #009688, #9B59B6);
+  -webkit-background-clip: text;
+  /* For better browser compatibility */
+  color: transparent;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  /* Additional styling as needed */
+  margin-bottom: 20px;
+  font-family: "space grotesk" , 'Times New Roman', Times, serif ;
+  text-transform: uppercase;
+  letter-spacing: 0.005em;
+  margin-left: 30%
+  
+}
+
+
+.animation-3d-masro2a{
+  margin-left: 0;
 }
