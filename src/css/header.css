@@ -9,7 +9,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: linear-gradient(90deg, #009688, #9B59B6);
+    background: transparent;
+    position: relative;
 
 }
 @keyframes translate-from-left{
@@ -41,7 +42,7 @@
 .image-header-section{
   animation: translate-from-left 2s  1 both , rotate-image 20s linear 2s infinite;
   transform-origin: 50% 56%;
-  width: 60%;
+  width: 80%;
   margin-left: 145px;
   z-index: -1;
 }
@@ -71,10 +72,13 @@
   padding: 0;
   z-index: 1;
   width: fit-content;
+  position: absolute;
+    top: 50%;
+    left: 5%;
 }
 .text-header-section{
   font-family: 'space grotesk', Times, serif;
-background: linear-gradient(90deg, #106159, #5c047f);
+background: linear-gradient(25deg, #f49867, #ae67fa);
     -webkit-background-clip: text;
     /* For better browser compatibility */
     color: transparent;

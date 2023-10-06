@@ -2,12 +2,15 @@ import React from "react";
 import "../css/Body.css";
 import AnimatedText from "./animate-text";
 import Veba from "./animation";
+import joe from "../joe.jpg";
+import marwan from "../marwan.jpg";
+import fares from "../fares.jpg";
 
 export default function Body() {
   return (
     <div className="body-section ">
       <div className="about-us-section">
-        <h1 className="about-us-header">About Us</h1>
+        <h1 className="about-us-header-part-top">About Us</h1>
         <p className="about-us-text">
           PLATINUM AI 🌟 <br></br>is your dedicated partner for the entire AI
           development journey, from idea inception to realization and beyond. We
@@ -21,7 +24,7 @@ export default function Body() {
       <div className="services-section">
         <div className="services-text">
           <AnimatedText
-            word1="just"
+            word1="automate"
             word2="your"
             word3="business"
             word4="with"
@@ -41,7 +44,7 @@ export default function Body() {
             <h1>ai agents</h1>
             <p className="service-description">
               ai agents will boost your leads so what are you waiting for start
-              boosting your <span className="crm ">crm </span>📈
+              boosting your CRM 📈
             </p>
           </div>
         </div>
@@ -55,10 +58,72 @@ export default function Body() {
         </div>
         <div className="our-service-container">
           <div className="our-service-container-header">
-            <h1>costum code solutions</h1>
+            <h1>costum solutions</h1>
             <p className="service-description">
-              just imagine what you what to create and we will make it work
+              just imagine what you what to create and we will make it work 🚀
             </p>
+          </div>
+        </div>
+      </div>
+      <div className="our-team">
+        <div className="our-team-header">
+          <h1>our team</h1>
+        </div>
+        <div className="our-team-container">
+          <div className="our-team-container-card">
+            <div className="our-team-container-card-img">
+              <img
+                src={marwan}
+                alt="hello joe"
+                className="image-profile-marwan"
+              />
+            </div>
+            <div className="our-team-container-card-text">
+              <h1 className="name">FARES WAEL</h1>
+              <p className="position">COO</p>
+            </div>
+          </div>
+
+          <div className="our-team-container-card">
+            <div className="our-team-container-card-img">
+              <img
+                src={marwan}
+                alt="hello joe"
+                className="image-profile-marwan"
+              />
+            </div>
+            <div className="our-team-container-card-text">
+              <h1 className="name">abdelrahman</h1>
+              <p className="position">ceeo</p>
+            </div>
+          </div>
+
+          <div className="our-team-container-card">
+            <div className="our-team-container-card-img">
+              <img
+                src={marwan}
+                alt="hello joe"
+                className="image-profile-marwan"
+              />
+            </div>
+            <div className="our-team-container-card-text">
+              <h1 className="name">yusuf emad</h1>
+              <p className="position">CSO</p>
+            </div>
+          </div>
+
+          <div className="our-team-container-card">
+            <div className="our-team-container-card-img">
+              <img
+                src={marwan}
+                alt="hello joe"
+                className="image-profile-marwan"
+              />
+            </div>
+            <div className="our-team-container-card-text">
+              <h1 className="name">marwan wael</h1>
+              <p className="position">ceo 📜</p>
+            </div>
           </div>
         </div>
       </div>

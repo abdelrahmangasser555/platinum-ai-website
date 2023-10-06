@@ -7,55 +7,56 @@
     opacity: 0;
   }
   100% {
+    
     opacity: 1;
   }
 }
 @keyframes in-out{
-  0%{
-    opacity: 0;
-    transform: translateX(-10%);
-    font-size: 1.5rem;
+  from{
+    color: white;
   }
-  50%{
-    opacity: 1;
-    transform: translateX(0%);
-    font-size: 1.8rem;
+  to{
+    color: gold;
   }
-  100%{
-    opacity: 1;
-    transform: translateX(0%);
-  }
+  
 }
 span{
+  margin-top: 20%;
   color: white;
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: 600;
   font-family: "space grotesk" , 'Times New Roman', Times, serif ;
   text-transform: uppercase;
   line-height: 2;
+  background: linear-gradient(90deg, #009688, #9B59B6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+
 }
 .text-container.visible{
   opacity: 1;
+  margin-top: 15%;
 }
-.word-1{
-  animation: fade-in 3s ease-in-out 100ms forwards 1;
-  color: black;
+.text-container.visible .word-1{
+  animation: fade-in 1s ease-in-out 200ms forwards 1;
 }
 
 .text-container.visible .word-2 {
 
-  animation: fade-in 1s ease-in-out 200ms forwards;
+  animation: fade-in 1s ease-in-out 600ms forwards;
 }
 .text-container.visible .word-3 {
 
-  animation: fade-in 1s ease-in-out 300ms forwards;
+  animation: fade-in 1s ease-in-out 1.2s forwards;
 }
 .text-container.visible .word-4 {
 
-  animation: fade-in 1s ease-in-out 400ms forwards;
+  animation: fade-in 1s ease-in-out 1.6s forwards;
 }
-.word-5{
+.text-container.visible .word-5{
+  color: azure;
   
-    animation: in-out 2s ease-in-out 2s forwards infinite;
-    color: orange;
+    animation: fade-in 1s ease-in-out 2.4s forwards , in-out 1s ease-in-out 2.4s forwards;
+    
 }

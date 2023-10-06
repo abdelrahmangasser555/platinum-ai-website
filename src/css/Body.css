@@ -15,7 +15,7 @@
   /* This pushes the content to the top */
   text-align: center;
   /* Center the text horizontally */
-  margin-left: 40px;
+  margin-left: auto;
 }
 .about-us-header{
   background: linear-gradient(90deg, #009688, #9B59B6);
@@ -31,14 +31,28 @@
   text-transform: uppercase;
   letter-spacing: 0.005em;
 }
+.about-us-header-part-top{
+  background: linear-gradient(90deg, #009688, #9B59B6);
+    -webkit-background-clip: text;
+    /* For better browser compatibility */
+    color: transparent;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+      font-family: "space grotesk", 'Times New Roman', Times, serif;
+      text-transform: uppercase;
+      letter-spacing: 0.005em;
+  
+}
 .about-us-text{
   font-size: 1.2rem;
   font-weight: 400;
-  color: #4d5761;
+  color: white;
   font-family: "space grotesk" , 'Times New Roman', Times, serif ;
   text-transform: uppercase;
   width : 25%;
-  margin-left: auto;
+  margin-left: 26%;
   margin-right: auto;
   line-height: 1.6;
   
@@ -49,20 +63,20 @@
   align-items: center;
   justify-content: flex-start;
   margin-top: 150px;
-  height: 10vh;
+  margin-bottom: 60vh;
+  height: 20vh;
   width: 100vw;
-  background: linear-gradient(90deg,
-    #000000,
-    #1abc9c);;
+  background: transparent;
 }
 .our-services{
-  width: 90vw;
+  width: 60vw;
   height: calc(fit-content + 10vh);
   margin-bottom: 10vh;
   display : grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 35px;
   column-gap: 10%;
+  margin-left: -5%;
 }
 .our-service-container{ 
   display: flex;
@@ -70,13 +84,19 @@
   align-items: center;
   justify-content: center;
   height: 25vh;
-  width: 20vw;
+  width: 15vw;
 
-  border: solid 1px #000000;
+  border: solid 2px grey;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
   border-radius: 15px;
   position: relative;
 }
-@media screen and (max-height: 600px){
+.our-service-container:hover{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+@media screen and (max-width: 576px){
   .our-service-container{
     width: 80vw;
     height: 30vh;
@@ -89,20 +109,67 @@
     grid-template-columns: 1fr;
     row-gap: 10%;
   }
+  .service-description  > p{
+    font-size: 0.4 rem;
+  }
+  .about-us-text{
+    font-size: 0.8rem;
+    width: 50%;
+  }
+  .body-section{
+    height: 400vh;
+  }
 }
 
-@media screen and (max-width: 1600px){
+@media screen and (min-width: 577px) and (max-width: 1024px){
   .our-service-container{
-    width: 25vw;
+    width: 40vw;
     height: 30vh;
   }
   .our-service-container-header>h1{
       font-size: 0.6rem;
       line-height: 1;
+  }
   .our-service-container-header{
     background-color: #000000;
   }
-  }
+}
+@media screen and (min-width: 1025px){
+  .our-service-container {
+      width: 20vw;
+      height: 30vh;
+      margin-left: -20%;
+      overflow: hidden;
+    }
+  
+    .our-service-container-header>h1 {
+      font-size: 10px;
+      font-weight: 400;
+      color :white;
+      text-wrap: wrap;
+
+      line-height: 0.4;
+    }
+    .our-services {
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 10%;
+    }
+  
+    .service-description {
+      font-size: 6rem;
+      width: 90%;
+    }
+  
+    .about-us-text {
+      font-size: 1.5rem;
+      width: 50%;
+      margin-top: 100px;
+    }
+  
+    .body-section {
+      height: 400vh;
+    }
+
 }
 .our-service-container-header{
   position: absolute;
@@ -114,27 +181,48 @@
 .our-service-container-header > h1{
   font-size: 1.4rem;
   font-weight: 400;
-  color: #4d5761;
+  color: #85b0da;
   font-family: "space grotesk" , 'Times New Roman', Times, serif ;
   text-transform: uppercase;
   width : 50%;
   margin-right: auto;
   line-height: 1.6;
   text-align: center;
-  white-space: nowrap;
+  white-space: wrap;
   text-align: center;
 }
 .service-description{
   width: 60%;
-  font-size: 1.2rem;
+  font-size: 1rem;
     font-weight: 300;
-    color: #4d5761;
+    color: white;
     margin-bottom: 5px;
     margin-left: -5%;
     letter-spacing: 0.005em;
     line-height: 2;
   }
-.crm{
+
+.animation-3d-masro2a {
+  margin-left: 0;
+  transition: all 1s ease-out;
+  /* Add a transition for the 'transform' property */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+.animation-3d-masro2a:hover {
+  animation: rotate 1s 0s 1 alternate forwards ease-in-out;
+}
+
+.our-team-header{
   background: linear-gradient(90deg, #009688, #9B59B6);
   -webkit-background-clip: text;
   /* For better browser compatibility */
@@ -147,11 +235,67 @@
   font-family: "space grotesk" , 'Times New Roman', Times, serif ;
   text-transform: uppercase;
   letter-spacing: 0.005em;
-  margin-left: 30%
-  
+  margin-left: 40%;
+  text-align: center;
+  text-wrap: nowrap;
+  width: fit-content;
 }
-
-
-.animation-3d-masro2a{
-  margin-left: 0;
+.our-team-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 150px;
+  height: 44vh;
+  width: 90vw;
+}
+.our-team-container-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 20vw;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  border: transparent 2px grey;
+  background:transparent;
+  overflow: hidden;
+  transition: transform 0.5;
+}
+.our-team-container-card:hover{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.2);
+  transition: 0.5s linear;
+}
+.image-profile-marwan{
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.image-profile-fares {
+  object-fit: fill;
+  width: 100%;
+  height: 60%;
+  border-radius: 15px 15px 0 0;
+}
+.our-team-container-card-text{
+  padding-bottom: 5px;
+}
+.name{
+  background: linear-gradient(25deg, #f49867, #ae67fa);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  padding-top: 0px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.position{
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: turquoise;
+  letter-spacing: 0.005em;
+  line-height: 2;
+  margin-left: 45%;
+  text-transform: uppercase;
 }

@@ -114,7 +114,7 @@ var init = function () {
   main(geometry, 1);
 
   material = new THREE.MeshStandardMaterial({
-    color: 0x123524,
+    color: 0xffffff,
     emissive: 0x353535,
     metalness: 0.5,
     wireframe: wireframe,
