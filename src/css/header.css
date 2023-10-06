@@ -98,3 +98,65 @@ background: linear-gradient(25deg, #f49867, #ae67fa);
   width: 20%;
 
 }
+.lets-talk{
+    font-family: 'space grotesk', Times, serif;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.button-lets-talk{
+    font-family: 'space grotesk', Times, serif;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 200px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    animation: translate-from-left 2s  1 both;
+    transition: background 1s ease-in-out;
+    border: 2px solid #fff;
+}
+.button-lets-talk:hover{
+    background: linear-gradient(25deg, #f49867, #ae67fa);
+    transition: background 1s ease-in-out;
+    border: none;
+}
+.we-offer{
+    font-family: 'space grotesk', Times, serif;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+
+}
+.we-offer-button{
+    font-family: 'space grotesk', Times, serif;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 200px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    animation: translate-from-left 2s  1 both;
+    transition: background 1s ease-in-out;
+    border: 2px solid #fff;
+}
+
+.we-offer-button:hover{
+    background: linear-gradient(25deg, #f49867, #ae67fa);
+    transition: background 1s ease-in-out;
+    border: none;
+}
+

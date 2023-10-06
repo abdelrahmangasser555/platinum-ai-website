@@ -14,6 +14,12 @@ export default function Header() {
       <nav className="text-section">
         <h1 className="text-header-section">Platinum AI</h1>
       </nav>
+      <nav className="lets-talk">
+        <button className="button-lets-talk">Let's Talk</button>
+      </nav>
+      <nav className="we-offer">
+        <button className="we-offer-button">what we offer ?</button>
+      </nav>
     </div>
   );
 }

@@ -28,7 +28,7 @@ span{
   font-family: "space grotesk" , 'Times New Roman', Times, serif ;
   text-transform: uppercase;
   line-height: 2;
-  background: linear-gradient(90deg, #009688, #9B59B6);
+  background:  linear-gradient(25deg, #f49867, #ae67fa);;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
