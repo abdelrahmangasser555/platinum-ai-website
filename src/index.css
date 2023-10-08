@@ -1,13 +1,4 @@
 .my-app{
   position:relative;
-
-}
-#video-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-  /* To place it behind other content */
+  background-color: #071e26;
 }

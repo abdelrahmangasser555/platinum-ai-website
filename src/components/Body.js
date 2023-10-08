@@ -24,10 +24,10 @@ export default function Body() {
       <div className="services-section">
         <div className="services-text">
           <AnimatedText
-            word1="automate"
-            word2="your"
-            word3="business"
-            word4="with"
+            word1="optimize "
+            word2="costumize "
+            word3="utalize "
+            word4="ideas with "
             word5="platinumai"
           />
         </div>
@@ -126,6 +126,12 @@ export default function Body() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="call-to-action">
+        <h1>
+          are you ready to ascend to the future and be platinum nekny arba3a{" "}
+          <span>🚀</span>
+        </h1>
       </div>
     </div>
   );

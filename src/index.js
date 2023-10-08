@@ -9,12 +9,6 @@ import "./index.css";
 function App() {
   return (
     <div className="my-app">
-      <div className="background-container">
-        <video autoPlay muted loop id="video-background">
-          <source src={vedio} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
       <Header />
       <Body />
       <Footer />

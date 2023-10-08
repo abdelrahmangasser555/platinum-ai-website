@@ -1,6 +1,10 @@
 .text-container {
   opacity: 0;
   transition: opacity 0.5s;
+    background-image: url(../mix.svg );
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
 }
 @keyframes fade-in {
   0% {
