@@ -11,7 +11,7 @@
     flex-direction: column;
     background: transparent;
     position: relative;
-    background-image: url(../pink.svg ) , url(../gradients-3.svg);
+    background-image: url(../mix.svg ) , url(../gradients-3.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

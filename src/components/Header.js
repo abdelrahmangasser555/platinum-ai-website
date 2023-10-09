@@ -15,10 +15,16 @@ export default function Header() {
         <h1 className="text-header-section">Platinum AI</h1>
       </nav>
       <nav className="lets-talk">
-        <button className="button-lets-talk">Let's Talk</button>
+        <a href="https://calendly.com/abdelrahmangasser2020/30min">
+          <button className="button-lets-talk">Let's Talk</button>
+        </a>
       </nav>
       <nav className="we-offer">
-        <button className="we-offer-button">what we offer ?</button>
+        <a href="">
+          <button className="we-offer-button" href="https://www.youtube.com/">
+            what we offer ?
+          </button>
+        </a>
       </nav>
     </div>
   );

@@ -312,4 +312,8 @@
     text-transform: uppercase;
     letter-spacing: 0.005em;
     margin-top: 20vh;
+      background-image: url(../gradients-3.svg );
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
 }
