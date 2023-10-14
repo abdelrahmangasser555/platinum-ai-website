@@ -124,7 +124,7 @@ export default function Body() {
           </div>
         </div>
       </div>
-      <div className="call-to-action">
+      <div className="call-to-action" id="to-section">
         <h1>see the future</h1>
       </div>
     </div>

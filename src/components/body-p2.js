@@ -6,7 +6,7 @@ import boosting from "../boosting-RB.png";
 
 export default function Body2() {
   return (
-    <div className="body-2" id="to-section">
+    <div className="body-2">
       <div className="sec">
         <div className="image-container">
           <img src={down} alt="down" className="image-down"></img>
