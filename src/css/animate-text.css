@@ -5,6 +5,7 @@
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
+      z-index: 1;
 }
 @keyframes fade-in {
   0% {
@@ -14,15 +15,6 @@
     
     opacity: 1;
   }
-}
-@keyframes in-out{
-  from{
-    color: white;
-  }
-  to{
-    color: gold;
-  }
-  
 }
 span{
   margin-top: 20%;

@@ -125,10 +125,7 @@ export default function Body() {
         </div>
       </div>
       <div className="call-to-action">
-        <h1>
-          are you ready to ascend to the next level of your business 🚀
-          <span>🚀</span>
-        </h1>
+        <h1>see the future</h1>
       </div>
     </div>
   );

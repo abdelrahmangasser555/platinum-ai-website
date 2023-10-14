@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/header.css";
 import pl from "../logo-3.svg";
+import { Link } from "react-scroll";
 export default function Header() {
   return (
     <div className="header-section ">
@@ -20,11 +21,16 @@ export default function Header() {
         </a>
       </nav>
       <nav className="we-offer">
-        <a href="">
-          <button className="we-offer-button" href="https://www.youtube.com/">
-            what we offer ?
-          </button>
-        </a>
+        <Link
+          activeClass="active"
+          to="to-section" // Replace with the ID of the section you want to scroll to
+          spy={true}
+          smooth={true}
+          offset={-70} // Adjust the offset as needed
+          duration={2000}
+        >
+          <button className="we-offer-button">what we offer ?</button>
+        </Link>
       </nav>
     </div>
   );

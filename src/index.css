@@ -1,4 +1,5 @@
 .my-app{
   position:relative;
   background-color: #071e26;
+  cursor: url(cursor-cheese.png), auto;
 }
