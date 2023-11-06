@@ -1,34 +1,107 @@
 .footer-section{
   width:100vw;
-  height: 50px;
+  height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-    background : transparent;
-    color: #fff;
-    font-size: 14px;
-    line-height: 24px;
-    position: absolute;
-    bottom: 0;
+  background : transparent;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  position: absolute;
+  bottom: 0;
+  box-decoration-break: slice;
+    
+
 }
-.footer-section-copyright{
+.left-fotter-section{
+
+  width: 50vw;
+  height: 50vh;
   display: flex;
-  padding-left: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 5vw;
 }
-.footer-section-social{
+.fotter-logo{
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  flex: 1;
-  color: black;
-  padding-right: 50px;
-  padding-left: 20px ;
 }
-.instagram-icon{
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
-  align-self: flex-end;
-  margin: 10px;
+.fotter-name{
+  font-size: 1.5vw;
+  font-weight: 600;
+  margin-top: 2vh;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  text-shadow: 5px 4px 6px rgba(173, 216, 230, 0.7);
+  font-family: "space grotesk", 'Times New Roman', Times, serif;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration-line: overline;
+}
+.discord-button{
+  width: 5vw;
+  height: auto;
+  border-radius: 10px;
+  padding-right: 20px;
+  padding-top: 4px;
+  margin-left: 1.3vw;
+  background-color: transparent;
+  background: transparent;
+  border: 2px solid white;
+  margin-bottom: 2vh;
+}
+.discord-button:hover{
+  background: linear-gradient(25deg, #f49867, #ae67fa);
+  transition: background 1s ease-in-out;
+  border: none;
+}
+.discord-icon{
+  width: 2vw;
+  height: auto;
+  margin-left: 1vw;
+}
+.email-fotter{
+  align-self: center;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 10px 40px;
+  border-radius: 10%;
+}
+.contact-fotter{
+  align-self: center;
+  margin-left: 15vh;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 10px 40px;
+  border-radius: 10% ;
+}
+.email-fotter:hover,
+.contact-fotter:hover{
+  .left-fotter-text{
+    color: white;
+  }
+  background: linear-gradient(25deg,
+    #f49867,
+    #ae67fa);
+  color: white;
+  transform : translateY(-5px);
+  box-shadow: 5px 10px 10px rgba(128, 125, 125, 0.482);
+  transition: all 0.5s ease-in-out;
+}
+.left-fotter-text{
+  text-transform: capitalize ;
+  background: linear-gradient(25deg,
+    #f49867,
+    #ae67fa);
+  -webkit-background-clip: text;
+  color: transparent;
+
+}
+.border{
+  border-top: 2px solid white;
+  width: 50%;
+  margin-left: 25%;
+  position: relative;
 }

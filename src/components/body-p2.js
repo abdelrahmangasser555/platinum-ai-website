@@ -5,6 +5,10 @@ import weOffer from "../we-offer-RB.png";
 import boosting from "../boosting-RB.png";
 
 export default function Body2() {
+  const [show, setShow] = React.useState(false);
+  function handleShow(event) {
+    setShow((prevShow) => !prevShow);
+  }
   return (
     <div className="body-2">
       <div className="sec">
@@ -18,11 +22,16 @@ export default function Body2() {
           <h1 className="heading">
             <span className="span-heading">problems </span>you have
           </h1>
-          <ul className="list">
-            <li className="list-item">low leads generation</li>
-            <li className="list-item">time consumption</li>
-            <li className="list-item">no constinouse development</li>
-          </ul>
+          {show && (
+            <ul className="list">
+              <li className="list-item">low leads generation</li>
+              <li className="list-item">time consumption</li>
+              <li className="list-item">no constinouse development</li>
+            </ul>
+          )}
+          <button onClick={handleShow} className="showy--button">
+            {show ? "PROBLEMS " : "PROBLEMS"}
+          </button>
         </div>
       </div>
       <div className="sec">
@@ -33,12 +42,18 @@ export default function Body2() {
           <h1 className="heading">
             solutions <span className="span-heading">we offer</span>
           </h1>
-          <ul className="list">
-            <li className="list-item">low leads generation</li>
-            <li className="list-item">time consumption</li>
-            <li className="list-item">no constinouse development</li>
-          </ul>
+          {show && (
+            <ul className="list">
+              <li className="list-item">low leads generation</li>
+              <li className="list-item">time consumption</li>
+              <li className="list-item">no constinouse development</li>
+            </ul>
+          )}
+          <button onClick={handleShow} className="showy--button">
+            {show ? "SOLUTIONS " : "SOLUTIONS"}
+          </button>
         </div>
+
         <div className="image-container-right">
           <img src={weOffer} alt="down" className="image-down"></img>
         </div>
@@ -59,11 +74,16 @@ export default function Body2() {
           <h1 className="heading">
             where you <span className="span-heading">will be</span>{" "}
           </h1>
-          <ul className="list">
-            <li className="list-item">low leads generation</li>
-            <li className="list-item">time consumption</li>
-            <li className="list-item">no constinouse development</li>
-          </ul>
+          {show && (
+            <ul className="list">
+              <li className="list-item">low leads generation</li>
+              <li className="list-item">time consumption</li>
+              <li className="list-item">no constinouse development</li>
+            </ul>
+          )}
+          <button onClick={handleShow} className="showy--button">
+            {show ? "RESULTS " : "RESULTS "}
+          </button>
         </div>
       </div>
       <div className="call-to-action-01">

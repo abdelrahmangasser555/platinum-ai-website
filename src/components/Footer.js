@@ -1,30 +1,50 @@
 import React from "react";
 import "../css/Footer.css";
+import instgram from "../instgram-icon.jpeg";
+import logo from "../logo-3.svg";
+import discord from "../discord-RB.png";
 export default function Footer() {
   return (
-    <div className="footer-section ">
-      <div className="footer-section-copyright">
-        <p>© 2023 - platinum ai </p>
+    <div className="all-fotter-section">
+      <div className="footer-section ">
+        <div className="left-fotter-section">
+          <div className="footer-logo">
+            <img
+              src={logo}
+              alt="platinum ai logo"
+              className="fotter-logo"
+            ></img>
+            <h1 className="fotter-name">platinum ai</h1>
+          </div>
+          <div className="join-our-discord">
+            <h3 className="join-our-discord-text">Join our discord</h3>
+            <button className="discord-button">
+              <img
+                src={discord}
+                alt="discord icon"
+                className="discord-icon"
+              ></img>
+            </button>
+          </div>
+        </div>
+        <div className="email-fotter">
+          <h1 className="left-fotter-text">address</h1>
+          <p>alexandria , egypt</p>
+        </div>
+        <div className="contact-fotter">
+          <h1 className="left-fotter-text">contact</h1>
+          <p>autox@gmail.com</p>
+        </div>
       </div>
-      <div className="footer-section-social">
-        <div className="instagram">
-          <a href="https://www.instagram.com/platinum.ai/">
-            <img
-              src="https://th.bing.com/th/id/OIP.DWugoLIiK6MIiv5sfToTQQAAAA?pid=ImgDet&rs=1"
-              alt="instagram"
-              className="instagram-icon"
-            />
-          </a>
-        </div>
-        <div className="facebook">
-          <a href="https://www.youtube.com/@PlatinumAI911" target="_blank">
-            <img
-              src="https://th.bing.com/th/id/R.d615fcb54c8d0bc5d367cbba04bb8610?rik=fVRj7cvbxAp9TA&pid=ImgRaw&r=0"
-              alt="instagram"
-              className="instagram-icon"
-            />
-          </a>
-        </div>
+      <div className="border">
+        <p
+          style={{
+            display: "inline-block",
+            color: "white",
+          }}
+        >
+          copyright plattinum ai ©
+        </p>
       </div>
     </div>
   );

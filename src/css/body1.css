@@ -38,11 +38,26 @@
     color: white;
     text-shadow: 5px 4px 6px rgba(173, 216, 230, 0.7);
         font-family: "space grotesk", 'Times New Roman', Times, serif;
+    }
+.showy--button{
+    background-color: transparent;
+    margin-top: 3vh;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    margin-left: 16vw;
+    margin-bottom: 0;
+}
+.showy--button:hover{
+    background: linear-gradient(25deg, #f49867, #ae67fa);
+        transition: background 1s ease-in-out;
+        border: none;
 }
 .list{
     font-size: 1.5vw;
     font-weight: 500;
-    margin-top: 10%;
     text-align: center;
     list-style: none;
     margin-left: 0;
@@ -95,7 +110,7 @@
         animation: translate-from-left 2s 1 both;
         transition: background 1s ease-in-out;
         border: 2px solid #fff;
-        margin-bottom: 35vh;
+        margin-bottom: 60vh;
 }
 .let-us-talk:hover{
     background: linear-gradient(25deg, #f49867, #ae67fa);

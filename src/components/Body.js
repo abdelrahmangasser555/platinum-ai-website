@@ -2,10 +2,11 @@ import React from "react";
 import "../css/Body.css";
 import AnimatedText from "./animate-text";
 import Veba from "./animation";
-import joe from "../joe.jpg";
+import joe from "../joe_duplicate.jpg";
 import marwan from "../marwan.jpg";
 import fares from "../fares-cropped-2.jpg";
 import ana from "../gasser-cropped-2.png";
+import hamada from "../joe-shorse-amplify.png";
 
 export default function Body() {
   return (
@@ -53,7 +54,8 @@ export default function Body() {
           <div className="our-service-container-header">
             <h1>automations</h1>
             <p className="service-description">
-              ai agents will boost your leads and{" "}
+              automations will connect all your apps together and CI&CD <br />
+              save your time 🕒 and money 💰
             </p>
           </div>
         </div>
@@ -91,21 +93,31 @@ export default function Body() {
             </div>
             <div className="our-team-container-card-text">
               <h1 className="name">gasser</h1>
-              <p className="position">ceeo</p>
+              <p className="position">CMO</p>
             </div>
           </div>
 
           <div className="our-team-container-card">
             <div className="our-team-container-card-img">
               <img
-                src={marwan}
-                alt="hello joe"
-                className="image-profile-marwan"
+                src="https://i.pinimg.com/originals/44/c1/87/44c1876c21a647474142f9534f8f34ed.jpg"
+                alt="joe shorse"
+                className="image-profile-marwa"
+                style={{
+                  width: "100%",
+                  height: "80%",
+                  // don't maintain aspect ratio
+                  objectFit: "cover",
+                  // contain,
+                  // scale the image uniformly
+                  objectPosition: "center",
+                  overflow: "hidden",
+                }}
               />
             </div>
             <div className="our-team-container-card-text">
               <h1 className="name">yusuf emad</h1>
-              <p className="position">CSO</p>
+              <p className="position">CTO</p>
             </div>
           </div>
 
@@ -119,7 +131,7 @@ export default function Body() {
             </div>
             <div className="our-team-container-card-text">
               <h1 className="name">marwan wael</h1>
-              <p className="position">ceo 📜</p>
+              <p className="position">ceo</p>
             </div>
           </div>
         </div>
